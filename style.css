@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+body{
+    background-color: black;
 }
 
 @font-face {
@@ -44,7 +49,7 @@
     --borderColor: #222222;
     --fontRegular: 'netflix_sansregular', Arial, sans-serif;
     --fontMedium: 'netflix_sansmedium', Arial, sans-serif;
-    --fontLight: 'netflix_sansmedium', Arial, sans-serif;
+    --fontLight: 'netflix_sanslight', Arial, sans-serif;
     --fontBold: 'netflix_sans_bold', Arial, sans-serif;
 }
 
@@ -71,11 +76,11 @@ header{
 .hero_section{
     background-color: cadetblue;
     padding: 70px 45px;
-    background-image: url(/assets/hero_bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.60)), url(/assets/hero_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 15px solid var(--borderColor);
+    border-bottom: 8px solid var(--borderColor);
 
 }
 .hero_section-content{
@@ -93,13 +98,13 @@ header{
 }
 
 .hero_section-text > h2 {
-    font-family: var(--fontRegular);
+    font-family: var(--fontLight);
     font-size: 22px;
     margin: 10px 0;
 }
 
 h3{
-    font-family: var(--fontRegular);
+    font-family: var(--fontLight);
     font-size: 19px;
 }
 
@@ -127,4 +132,64 @@ h3{
     width: 50%;
     font-family: var(--fontRegular);
     font-size: 26px;
+}
+
+
+/* watchontv section */
+.watchontv_section{
+    padding: 70px 45px;
+    border-bottom: 8px solid var(--borderColor);
+
+}
+
+.watchontv_section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.watchontv_section-text{
+    color: white;
+    width: 45%;
+    padding: 10% 0;
+
+}
+
+.watchontv_section-text > h1 {
+    font-family: var(--fontMedium);
+    font-size: 50px;
+    line-height: 55px;
+    
+}
+.watchontv_section-text > h1:hover{
+    text-decoration: underline;
+}
+
+.watchontv_section-text > h2 {
+    font-family: var(--fontRegular);
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.watchontv_section-text > h2:hover{
+    text-decoration: underline;
+}
+
+.watchontv_section-img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.tv {
+    width: 100%;
+    display: block;
+}
+
+.poster {
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    width: 465px;
+    height: 260px;
 }
