@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'netflix_sans_bold';
+    src: url('/assets/webfontkit-20221121-173646/netflixsans-bold-webfont.woff2') format('woff2'),
+         url('/assets/webfontkit-20221121-173646/netflixsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sanslight';
+    src: url('/assets/webfontkit-20221121-173646/netflixsans-light-webfont.woff2') format('woff2'),
+         url('/assets/webfontkit-20221121-173646/netflixsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sansmedium';
+    src: url('/assets/webfontkit-20221121-173646/netflixsans-medium-webfont.woff2') format('woff2'),
+         url('/assets/webfontkit-20221121-173646/netflixsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sansregular';
+    src: url('/assets/webfontkit-20221121-173646/netflixsans-regular-webfont.woff2') format('woff2'),
+         url('/assets/webfontkit-20221121-173646/netflixsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --primaryColor: #DE0611;
+    --borderColor: #222222;
+    --fontRegular: 'netflix_sansregular', Arial, sans-serif;
+    --fontMedium: 'netflix_sansmedium', Arial, sans-serif;
+    --fontLight: 'netflix_sansmedium', Arial, sans-serif;
+    --fontBold: 'netflix_sans_bold', Arial, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 45px;
+    position: absolute;
+    width: 95%;
+}
+
+#sign_in_btn{
+    background-color: var(--primaryColor);
+    font-family: var(--fontRegular);
+    border: none;
+    color: white;
+    width: 6rem;
+    font-size: 16px;
+    border-radius: 6px;   
+}
+
+
+.hero_section{
+    background-color: cadetblue;
+    padding: 70px 45px;
+    background-image: url(/assets/hero_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 15px solid var(--borderColor);
+
+}
+.hero_section-content{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 75px 0;
+}
+
+
+.hero_section-text >  h1 {
+    font-family: 'netflix_sansmedium', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.hero_section-text > h2 {
+    font-family: var(--fontRegular);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+h3{
+    font-family: var(--fontRegular);
+    font-size: 19px;
+}
+
+
+#register_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+#email{
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    font-family: var(--fontRegular);
+}
+
+#get_started_btn{
+    padding: 15px;
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    width: 50%;
+    font-family: var(--fontRegular);
+    font-size: 26px;
+}
