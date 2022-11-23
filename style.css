@@ -205,4 +205,79 @@ h3{
     height: 260px;
 }
 
+li > i{
+    float: right;
+}
+
+.faq{
+    color: white;
+    list-style-type: none;
+
+}
+.faq_container{
+    margin: 2em auto;
+    width: 75%;
+}
+
+
+.faq_list{
+    color: white;
+    list-style-type: none;
+    margin-bottom: 60px;
+}
+
+
+.faq_container > h1{
+    color: white;
+    font-family: var(--fontMedium);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.faq_list > li{
+    background-color: #303030;
+    margin-bottom: 10px;
+    padding: 30px 15px;
+    font-family: var(--fontRegular);
+    font-size: 26px;
+}
+
+.subscribe{
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+.contactus{
+    color: #4F4F4F;
+    border-bottom: none;
+    padding-bottom: 4px;
+}
+
+.contactus_container{
+    margin: 2em auto;
+    width: 50%;
+    font-family: var(--fontRegular);
+
+
+}
+
+.contactus_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.contactus_content > ul{
+    list-style: none;
+    font-family: var(--fontRegular);
+    font-size: 13px;
+}
+.contactus_content > ul >li{
+    margin-bottom: 30px;
+}
 
