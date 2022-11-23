@@ -66,10 +66,15 @@ header{
     background-color: var(--primaryColor);
     font-family: var(--fontRegular);
     border: none;
-    color: white;
     width: 6rem;
     font-size: 16px;
-    border-radius: 6px;   
+    border-radius: 6px;  
+}
+
+#sign_in_btn > a{
+    text-decoration: none; 
+    color: white;
+
 }
 
 
@@ -89,6 +94,7 @@ header{
     text-align: center;
     color: white;
     padding: 75px 0;
+    margin-top: 100px;
 }
 
 
@@ -113,6 +119,7 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 12px;
     
 }
 
@@ -136,46 +143,50 @@ h3{
 
 
 /* watchontv section */
-.watchontv_section{
+.offerings_section{
     padding: 70px 45px;
     border-bottom: 8px solid var(--borderColor);
 
 }
 
-.watchontv_section-container{
+.offerings_section-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-.watchontv_section-text{
+#reverse{
+    flex-direction: row-reverse;
+}
+
+
+.offerings_section-text{
     color: white;
     width: 45%;
     padding: 10% 0;
 
 }
 
-.watchontv_section-text > h1 {
+.offerings_section-text > h1 {
     font-family: var(--fontMedium);
     font-size: 50px;
     line-height: 55px;
     
 }
-.watchontv_section-text > h1:hover{
+.offerings_section-text > h1:hover{
     text-decoration: underline;
 }
 
-.watchontv_section-text > h2 {
+.offerings_section-text > h2 {
     font-family: var(--fontRegular);
     font-size: 26px;
     margin-top: 20px;
 }
 
-.watchontv_section-text > h2:hover{
+.downloadandwatch_section-text > h2:hover{
     text-decoration: underline;
 }
 
-.watchontv_section-img{
+.offerings_section-img{
     position: relative;
     top: 0;
     left: 0;
@@ -193,3 +204,5 @@ h3{
     width: 465px;
     height: 260px;
 }
+
+
